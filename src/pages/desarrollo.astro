@@ -1,0 +1,181 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+<BaseLayout title="Desarrollo personal y profesional | Portafolio">
+  <section class="page-hero"><div class="container"><span class="eyebrow">Formación integral</span><h1>Desarrollo personal, social y profesional</h1><p>Actividades para analizar necesidades de la comunidad, establecer metas, proponer soluciones con impacto y planear mi crecimiento profesional.</p></div></section>
+  <section class="content-section"><div class="container">
+    <div class="supplement-nav">
+      <a href="#creatividad">1. Creatividad</a><a href="#vida">2. Proyecto de vida</a><a href="#emprendimiento">3. Emprendimiento</a><a href="#carrera">4. Plan de carrera</a>
+    </div>
+    <section class="section" id="creatividad">
+<div class="kicker">Actividad · Desarrollo personal y social</div><h2>1. Creatividad</h2>
+<p class="lead">Propuesta: <strong>Campus Conecta</strong>, un espacio digital sencillo que reúne avisos, actividades, apoyo académico y objetos perdidos de la comunidad universitaria.</p>
+<h3>Problema observado</h3>
+<p>En una comunidad universitaria, la información importante suele compartirse por distintos medios: grupos de mensajería, carteles, publicaciones y comentarios entre compañeros. Esto provoca que algunos estudiantes no se enteren a tiempo de eventos, cambios de horario, asesorías o avisos. También hace difícil localizar objetos perdidos o encontrar apoyo académico.</p>
+<div class="callout"><strong>Necesidad detectada:</strong> contar con un sitio único, accesible desde el celular, donde la comunidad pueda consultar y compartir información útil y verificada.</div>
+<h3>Tres ideas de solución</h3>
+<div class="grid">
+<div class="card"><span class="tag">Idea 1</span><h3>Campus Conecta</h3><p>Portal web con avisos, calendario de eventos, asesorías y sección de objetos perdidos.</p><p><strong>Ventaja:</strong> concentra información y puede consultarse desde cualquier dispositivo.</p></div>
+<div class="card"><span class="tag">Idea 2</span><h3>Mapa QR del campus</h3><p>Códigos QR en puntos estratégicos que abren un mapa con edificios, laboratorios, oficinas y servicios.</p><p><strong>Ventaja:</strong> facilita la orientación a estudiantes de nuevo ingreso.</p></div>
+<div class="card"><span class="tag">Idea 3</span><h3>Red de tutorías entre pares</h3><p>Directorio para que estudiantes ofrezcan y soliciten apoyo en materias que dominan.</p><p><strong>Ventaja:</strong> promueve colaboración y aprendizaje compartido.</p></div>
+</div>
+<h3>Criterios de selección</h3>
+<table><tr><th>Criterio</th><th>Campus Conecta</th><th>Mapa QR</th><th>Tutorías</th></tr>
+<tr><td>Impacto en la comunidad</td><td>Alto</td><td>Medio</td><td>Alto</td></tr>
+<tr><td>Facilidad de realizar una primera versión</td><td>Alta</td><td>Alta</td><td>Media</td></tr>
+<tr><td>Utilidad para distintos estudiantes</td><td>Alta</td><td>Media</td><td>Media</td></tr>
+<tr><td>Posibilidad de crecer</td><td>Alta</td><td>Media</td><td>Alta</td></tr></table>
+<p>Seleccioné <strong>Campus Conecta</strong> porque atiende varias necesidades al mismo tiempo, puede comenzar como una página sencilla y permite agregar funciones conforme se reciba retroalimentación.</p>
+<h3>Mapa mental</h3>
+<div class="mind">
+<div class="center">CAMPUS CONECTA · Mejorar la comunicación universitaria</div>
+<div class="node"><strong>Problema</strong><br/>Información dispersa y avisos que no llegan a todos.</div>
+<div class="node"><strong>Usuarios</strong><br/>Estudiantes, docentes, tutores y personal escolar.</div>
+<div class="node"><strong>Funciones</strong><br/>Avisos, calendario, asesorías y objetos perdidos.</div>
+<div class="node"><strong>Recursos</strong><br/>Computadora, internet, hosting y colaboración estudiantil.</div>
+<div class="node"><strong>Beneficios</strong><br/>Mejor comunicación, ahorro de tiempo y participación.</div>
+<div class="node"><strong>Evaluación</strong><br/>Visitas, avisos consultados y opiniones de usuarios.</div>
+</div>
+<h3>Prototipo navegable</h3>
+<p class="small">Selecciona las opciones para simular la navegación de la primera versión del portal.</p>
+<div class="prototype">
+<div class="protohead"><strong>Campus Conecta</strong><br/><span class="small" style="color:#d8edf5">Información universitaria en un solo lugar</span></div>
+<div class="proto-nav">
+<button class="secondary" onclick="showPanel('inicio')">Inicio</button><button class="secondary" onclick="showPanel('avisos')">Avisos</button><button class="secondary" onclick="showPanel('asesorias')">Asesorías</button><button class="secondary" onclick="showPanel('perdidos')">Objetos perdidos</button>
+</div>
+<div class="proto-body">
+<div class="proto-panel active" id="inicio"><h3>¡Bienvenido!</h3><p>Consulta información útil para tu vida universitaria.</p><div class="grid"><div class="item"><strong>📢 Avisos</strong><br/>Entérate de comunicados y fechas importantes.</div><div class="item"><strong>📚 Asesorías</strong><br/>Encuentra apoyo para tus materias.</div><div class="item"><strong>🔎 Objetos perdidos</strong><br/>Consulta artículos reportados por la comunidad.</div></div></div>
+<div class="proto-panel" id="avisos"><h3>Avisos universitarios</h3><div class="item"><strong>Inscripción a actividades</strong><br/>Consulta con coordinación las fechas y requisitos.</div><div class="item"><strong>Uso de laboratorios</strong><br/>Revisa los horarios disponibles antes de acudir.</div></div>
+<div class="proto-panel" id="asesorias"><h3>Asesorías entre estudiantes</h3><div class="item"><strong>Programación básica</strong><br/>Apoyo entre compañeros · horario por acordar.</div><div class="item"><strong>Matemáticas</strong><br/>Repaso de ejercicios · horario por acordar.</div></div>
+<div class="proto-panel" id="perdidos"><h3>Objetos perdidos</h3><div class="item"><strong>Identificación:</strong> botella azul · <strong>Lugar:</strong> biblioteca · <strong>Estado:</strong> reportado.</div><div class="item"><strong>Identificación:</strong> memoria USB negra · <strong>Lugar:</strong> laboratorio · <strong>Estado:</strong> reportado.</div></div>
+</div></div>
+<h3>Retroalimentación de un usuario</h3>
+<p><strong>Usuario consultado (compañero de clase):</strong> “La página sería útil porque no tendría que buscar los avisos en diferentes grupos. Me gustaría que los avisos tuvieran fecha y que se indicara quién los publica”.</p>
+<p><strong>Mejora incorporada:</strong> cada aviso tendrá fecha de publicación, categoría y responsable. También se agregará un mecanismo para reportar información incorrecta.</p>
+<h3>Reflexión de cierre: ¿Por qué la propuesta aporta valor?</h3>
+<p>Campus Conecta aporta valor porque resuelve una dificultad cotidiana de la comunidad universitaria mediante una herramienta digital fácil de consultar. Ayuda a que más estudiantes reciban la misma información, encuentren apoyo y participen en las actividades. Su valor no está solamente en la tecnología, sino en facilitar la comunicación y la colaboración.</p>
+</section><section class="section" id="vida">
+<div class="kicker">Actividad · Desarrollo personal y social</div><h2>2. Proyecto de vida</h2>
+<p class="lead">Mi propósito es desarrollarme como una persona responsable, independiente y preparada profesionalmente, aprovechando mis estudios de Ingeniería Informática para construir un futuro estable y aportar soluciones útiles.</p>
+<h3>Valores que orientan mis decisiones</h3>
+<div class="grid"><div class="card"><h3>Responsabilidad</h3><p>Cumplir mis compromisos y organizar mi tiempo.</p></div><div class="card"><h3>Perseverancia</h3><p>Continuar aprendiendo aunque existan dificultades.</p></div><div class="card"><h3>Honestidad</h3><p>Actuar con respeto y reconocer mis errores.</p></div><div class="card"><h3>Superación</h3><p>Buscar oportunidades para mejorar personal y profesionalmente.</p></div></div>
+<h3>Metas SMART y prioridades</h3>
+<table><tr><th>Plazo</th><th>Meta personal</th><th>Meta profesional/académica</th><th>Indicador de logro</th></tr>
+<tr><td><strong>1 año</strong></td><td>Mejorar mi organización, cuidar mi bienestar y ahorrar una cantidad fija cada mes.</td><td>Aprobar mis materias, fortalecer programación y terminar al menos dos proyectos pequeños.</td><td>Agenda semanal cumplida; ahorro mensual registrado; materias aprobadas y dos proyectos terminados.</td></tr>
+<tr><td><strong>3 años</strong></td><td>Tener mayor independencia, administrar mejor mis gastos y mantener relaciones personales positivas.</td><td>Avanzar o concluir la carrera según el plan académico, contar con portafolio y realizar prácticas o experiencia profesional.</td><td>Presupuesto personal; avance académico; portafolio con al menos cuatro proyectos y una experiencia práctica.</td></tr>
+<tr><td><strong>5 años</strong></td><td>Contar con estabilidad económica y continuar mi desarrollo personal.</td><td>Desempeñarme en un puesto relacionado con informática y seguir capacitándome en una especialidad.</td><td>Empleo o actividad profesional estable, certificación o curso avanzado y metas de ahorro.</td></tr></table>
+<h3>Línea de tiempo interactiva</h3>
+<div class="timeline">
+<div class="milestone"><span class="tag">Año 1 · Construir bases</span><p><strong>Acciones:</strong> organizar horarios, aprobar asignaturas, practicar programación tres veces por semana y crear dos proyectos.</p><p><strong>Prioridad:</strong> hábitos de estudio y fundamentos técnicos.</p></div>
+<div class="milestone"><span class="tag">Año 3 · Ganar experiencia</span><p><strong>Acciones:</strong> participar en proyectos, mejorar inglés técnico, crear portafolio, buscar prácticas y aprender a trabajar en equipo.</p><p><strong>Prioridad:</strong> experiencia demostrable y autonomía.</p></div>
+<div class="milestone"><span class="tag">Año 5 · Consolidar mi carrera</span><p><strong>Acciones:</strong> trabajar en el área elegida, especializarme, ahorrar y actualizar mis conocimientos.</p><p><strong>Prioridad:</strong> estabilidad y crecimiento profesional.</p></div>
+</div>
+<h3>Recursos, obstáculos y apoyos</h3>
+<table><tr><th>Tipo</th><th>Elementos</th><th>Cómo los aprovecharé o enfrentaré</th></tr>
+<tr><td>Recursos</td><td>Computadora, internet, materiales de estudio y tiempo de práctica.</td><td>Organizar horarios y utilizar recursos gratuitos de aprendizaje.</td></tr>
+<tr><td>Obstáculos</td><td>Distracciones, falta de tiempo, dificultades en algunas materias y gastos.</td><td>Dividir tareas, pedir ayuda a tiempo, priorizar y llevar un presupuesto.</td></tr>
+<tr><td>Apoyos</td><td>Familia, docentes, compañeros y comunidades de aprendizaje.</td><td>Solicitar orientación, participar y mantener comunicación.</td></tr></table>
+<h3>Revisión de avances</h3>
+<ul><li>Revisar cada domingo las actividades y metas de la semana.</li><li>Al final de cada mes, registrar materias, proyectos, ahorro y hábitos cumplidos.</li><li>Cada seis meses, ajustar las metas de acuerdo con los resultados y las nuevas circunstancias.</li></ul>
+<h3>Reflexión: ¿Cómo se conectan mis valores con mis metas?</h3>
+<p>Mis valores son la guía para alcanzar mis metas. La responsabilidad me ayuda a cumplir con mis estudios y compromisos; la perseverancia me permite superar las materias difíciles; la honestidad me ayuda a reconocer lo que necesito mejorar; y la superación me impulsa a seguir aprendiendo. Por eso, mis objetivos no se enfocan únicamente en conseguir un empleo, sino también en convertirme en una persona capaz de aportar algo positivo a los demás.</p>
+</section><section class="section" id="emprendimiento">
+<div class="kicker">Actividad · Aprendizaje y proyectos</div><h2>3. Emprendimiento social y económico</h2>
+<p class="lead">Proyecto: <strong>EcoPunto Universitario</strong>, un sistema de recolección y separación de materiales reciclables dentro de la comunidad escolar, acompañado de información digital y recompensas por participación.</p>
+<h3>Necesidad y beneficiarios</h3>
+<p>En los espacios escolares se generan botellas de plástico, papel, cartón y latas que pueden terminar mezclados con la basura común. Esto dificulta su aprovechamiento y aumenta los residuos. La propuesta beneficia principalmente a estudiantes, personal de la institución y, de manera indirecta, a recicladores y al entorno local.</p>
+<div class="callout"><strong>Problema que se busca validar:</strong> existe una oportunidad para mejorar la separación de residuos si se colocan puntos identificados, se informa qué materiales reciben y se facilita su entrega.</div>
+<h3>Propuesta de valor</h3>
+<p>EcoPunto facilita reciclar sin complicaciones: instala contenedores señalizados, publica instrucciones mediante códigos QR y registra de manera sencilla la cantidad de material recolectado. Los participantes pueden acumular puntos simbólicos por sus aportaciones y canjearlos por reconocimientos o beneficios autorizados por la escuela.</p>
+<h3>Lienzo de modelo de negocio de impacto</h3>
+<div class="grid">
+<div class="card"><h3>Beneficiarios y clientes</h3><p>Estudiantes, docentes, personal de la escuela y comunidad cercana.</p></div>
+<div class="card"><h3>Propuesta de valor</h3><p>Separación sencilla, educación ambiental y medición visible del reciclaje.</p></div>
+<div class="card"><h3>Canales</h3><p>Contenedores físicos, carteles, códigos QR y página web.</p></div>
+<div class="card"><h3>Relación con usuarios</h3><p>Campañas, retos por grupo, reconocimientos y publicación mensual de resultados.</p></div>
+<div class="card"><h3>Actividades clave</h3><p>Instalar puntos, clasificar, pesar, registrar y entregar materiales a un reciclador autorizado.</p></div>
+<div class="card"><h3>Recursos clave</h3><p>Contenedores, báscula, etiquetas, sitio web, voluntarios y espacio de almacenamiento temporal.</p></div>
+<div class="card"><h3>Aliados</h3><p>Institución educativa, comité ambiental, proveedores de contenedores y centros de reciclaje.</p></div>
+<div class="card"><h3>Costos</h3><p>Contenedores, señalética, báscula, difusión y mantenimiento.</p></div>
+<div class="card"><h3>Ingresos y sostenibilidad</h3><p>Apoyo institucional, patrocinios y posible recuperación de una parte de costos mediante la entrega de materiales valorizables. No se depende de ingresos para iniciar el piloto.</p></div>
+</div>
+<h3>Viabilidad inicial y costos estimados</h3>
+<p class="small">Estimaciones ilustrativas en pesos mexicanos para un piloto pequeño; deben confirmarse con cotizaciones locales antes de implementarse.</p>
+<table><tr><th>Concepto</th><th>Costo estimado</th></tr>
+<tr><td>4 contenedores identificados</td><td>$1,600 MXN</td></tr><tr><td>Báscula sencilla</td><td>$450 MXN</td></tr><tr><td>Etiquetas y carteles</td><td>$300 MXN</td></tr><tr><td>Material de difusión / impresión QR</td><td>$200 MXN</td></tr><tr><td>Guantes y bolsas resistentes</td><td>$350 MXN</td></tr><tr><th>Total inicial aproximado</th><th>$2,900 MXN</th></tr></table>
+<p><strong>Recursos no monetarios:</strong> espacio proporcionado por la escuela, tiempo de voluntarios, computadora e internet para el registro digital.</p>
+<h3>Plan piloto</h3>
+<ol><li>Solicitar autorización de la institución y acordar qué materiales se recibirán.</li><li>Colocar cuatro contenedores en zonas visibles y seguras.</li><li>Publicar instrucciones claras para evitar residuos contaminados.</li><li>Registrar semanalmente el peso por tipo de material.</li><li>Coordinar la entrega con un centro de reciclaje y publicar los resultados.</li></ol>
+<h3>Indicadores de impacto</h3>
+<ul><li>Kilogramos de material recuperado por mes.</li><li>Número de estudiantes participantes.</li><li>Porcentaje de residuos correctamente separados en una muestra de revisión.</li><li>Número de puntos de recolección activos y campañas realizadas.</li></ul>
+<h3>Reflexión: ¿Cómo equilibraría sostenibilidad e impacto social?</h3>
+<p>Equilibraría ambos aspectos comenzando con un proyecto pequeño y de bajo costo, midiendo los resultados antes de ampliarlo. El impacto social y ambiental debe ser la prioridad, pero para mantenerlo se necesita controlar los gastos, conseguir aliados y aprovechar los materiales recuperados de forma responsable. También es importante publicar resultados reales para generar confianza y evitar prometer beneficios que todavía no se han comprobado.</p>
+</section><section class="section" id="carrera">
+<div class="kicker">Actividad · Identidad profesional y vocación</div><h2>4. Plan de carrera</h2>
+<p class="lead">Comparación de dos perfiles relacionados con Ingeniería Informática: <strong>desarrollador de software</strong> y <strong>analista de ciberseguridad</strong>.</p>
+<h3>Perfil 1: Desarrollador de software</h3>
+<p>Diseña, programa, prueba y mantiene aplicaciones o sistemas que resuelven necesidades de usuarios y organizaciones.</p>
+<ul><li>Programación en lenguajes como Python, Java, JavaScript o C#.</li><li>Estructuras de datos, algoritmos y programación orientada a objetos.</li><li>Bases de datos SQL y diseño de APIs.</li><li>Control de versiones con Git y trabajo colaborativo.</li><li>Pruebas, depuración, documentación y metodologías ágiles.</li><li>Comunicación, pensamiento lógico y resolución de problemas.</li></ul>
+<h3>Perfil 2: Analista de ciberseguridad</h3>
+<p>Apoya la protección de sistemas, redes y datos; identifica riesgos, revisa alertas y participa en la prevención y respuesta ante incidentes.</p>
+<ul><li>Fundamentos de redes, sistemas operativos Linux y Windows.</li><li>Principios de seguridad, gestión de riesgos y control de accesos.</li><li>Análisis de vulnerabilidades y monitoreo de eventos.</li><li>Conocimiento de herramientas de seguridad y registro de incidentes.</li><li>Buenas prácticas, documentación y nociones de normas de seguridad.</li><li>Atención al detalle, pensamiento analítico y ética profesional.</li></ul>
+<h3>Comparación con mis habilidades actuales</h3>
+<p>La siguiente es una autoevaluación inicial de referencia. Debe ajustarse con honestidad según los conocimientos y proyectos que ya se hayan realizado.</p>
+<table><tr><th>Competencia</th><th>Desarrollo de software</th><th>Ciberseguridad</th><th>Acción para cerrar la brecha</th></tr>
+<tr><td>Programación</td><td>En desarrollo</td><td>Básica</td><td>Practicar Python y JavaScript con ejercicios y proyectos.</td></tr>
+<tr><td>Bases de datos</td><td>En desarrollo</td><td>Básica</td><td>Crear una base de datos y practicar consultas SQL.</td></tr>
+<tr><td>Redes y sistemas operativos</td><td>Básica</td><td>En desarrollo</td><td>Estudiar TCP/IP y practicar comandos de Linux en laboratorio.</td></tr>
+<tr><td>Seguridad informática</td><td>Básica</td><td>En desarrollo</td><td>Aprender fundamentos, riesgos y controles de seguridad.</td></tr>
+<tr><td>Git y trabajo colaborativo</td><td>Básica</td><td>Básica</td><td>Publicar proyectos y documentar cambios en Git.</td></tr>
+<tr><td>Comunicación y documentación</td><td>En desarrollo</td><td>En desarrollo</td><td>Escribir reportes claros y explicar decisiones técnicas.</td></tr></table>
+<h3>Fuentes de consulta recomendadas</h3>
+<ul><li><a href="https://www.onetonline.org/" rel="noopener" target="_blank">O*NET OnLine</a>: perfiles ocupacionales, tareas y habilidades laborales.</li><li><a href="https://owasp.org/www-project-top-ten/" rel="noopener" target="_blank">OWASP Top 10</a>: riesgos frecuentes de seguridad en aplicaciones web.</li><li><a href="https://developer.mozilla.org/es/" rel="noopener" target="_blank">MDN Web Docs</a>: documentación para desarrollo web.</li><li><a href="https://skillsforall.com/" rel="noopener" target="_blank">Cisco Skills for All</a>: cursos introductorios de redes y ciberseguridad.</li></ul>
+<h3>Plan de formación de seis meses</h3>
+<table><tr><th>Mes</th><th>Formación y práctica</th><th>Evidencia</th></tr>
+<tr><td>1</td><td>Repasar lógica, Python y fundamentos de programación.</td><td>20 ejercicios resueltos y un programa sencillo.</td></tr>
+<tr><td>2</td><td>Aprender Git, GitHub y fundamentos de bases de datos SQL.</td><td>Repositorio con un proyecto conectado a una base de datos.</td></tr>
+<tr><td>3</td><td>Desarrollar una aplicación web básica con interfaz y API.</td><td>Aplicación funcional y documentación breve.</td></tr>
+<tr><td>4</td><td>Estudiar redes, Linux, permisos y conceptos de seguridad.</td><td>Prácticas en laboratorio propio y notas de comandos.</td></tr>
+<tr><td>5</td><td>Aprender vulnerabilidades web comunes y medidas de prevención.</td><td>Reporte de laboratorio seguro con riesgos y mitigaciones.</td></tr>
+<tr><td>6</td><td>Integrar lo aprendido en un proyecto, mejorar el portafolio y preparar CV.</td><td>Proyecto final publicado, README y CV actualizado.</td></tr></table>
+<div class="callout"><strong>Prioridad recomendada:</strong> fortalecer primero programación, bases de datos y desarrollo de proyectos. Estos fundamentos sirven para ambos perfiles; después podré decidir con más experiencia si deseo especializarme en desarrollo o ciberseguridad.</div>
+<h3>Reflexión: ¿Qué competencia necesito priorizar y por qué?</h3>
+<p>Necesito priorizar la programación y la resolución de problemas, porque son la base para crear soluciones informáticas y también ayudan a comprender cómo funcionan los sistemas que se deben proteger. Al mejorar estas competencias podré desarrollar proyectos propios, fortalecer mi portafolio y después profundizar en una especialidad. También debo practicar inglés técnico y comunicación, ya que son importantes para aprender de documentación y trabajar en equipo.</p>
+</section>
+  </div></section>
+  <script>
+    function showPanel(id) {
+      document.querySelectorAll('.proto-panel').forEach((p) => p.classList.remove('active'));
+      const target = document.getElementById(id);
+      if (target) target.classList.add('active');
+    }
+  </script>
+  <style>
+    .supplement-nav{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 22px}
+    .supplement-nav a{padding:9px 14px;border-radius:9px;background:#e8f1f8;color:#173d60;text-decoration:none;font-weight:700}
+    .supplement-nav a:hover{background:#d5e5f2}
+    .content-section .section{background:#fff;border:1px solid #dce5ee;border-radius:16px;padding:clamp(18px,3vw,30px);margin:0 0 22px;box-shadow:0 8px 24px #173d600d}
+    .content-section .kicker{color:#2474a6;font-size:.78rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+    .content-section h2{color:#173d60;margin:.2em 0 .5em}
+    .content-section h3{color:#246d99;margin:1.15em 0 .4em}
+    .content-section .lead{font-size:1.06rem;color:#526779}
+    .content-section .callout{background:#edf5fb;border-left:4px solid #4c9bc4;padding:14px 17px;border-radius:8px;margin:14px 0}
+    .content-section .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+    .content-section .card,.content-section .node{border:1px solid #dce5ee;border-radius:12px;padding:15px;background:#f9fbfd}
+    .content-section .tag{display:inline-block;background:#e5f1f8;color:#205d82;border-radius:20px;padding:3px 10px;font-size:.8rem;font-weight:700}
+    .content-section table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.94rem;display:block;overflow-x:auto}
+    .content-section th,.content-section td{padding:10px;border:1px solid #dce5ee;text-align:left;vertical-align:top}
+    .content-section th{background:#edf4f8;color:#173d60}
+    .content-section .mind{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .content-section .mind .center{grid-column:1/-1;text-align:center;background:#173d60;color:white;border-radius:12px;padding:16px;font-weight:800}
+    .content-section .mind .node{background:#f0f6fa}
+    .content-section button{border:0;background:#246d99;color:#fff;padding:10px 15px;border-radius:9px;font-weight:700;cursor:pointer}
+    .content-section button.secondary{background:#e7f1f5;color:#173d60}
+    .content-section .prototype{border:2px solid #c7dce9;border-radius:16px;overflow:hidden;background:#f8fbfd}
+    .content-section .protohead{background:#173d60;color:white;padding:16px}
+    .content-section .proto-nav{display:flex;flex-wrap:wrap;gap:8px;padding:12px;background:#e8f1f8}
+    .content-section .proto-body{padding:18px;min-height:150px}
+    .content-section .proto-panel{display:none}.content-section .proto-panel.active{display:block}
+    @media(max-width:600px){.content-section .mind{grid-template-columns:1fr}}
+  </style>
+</BaseLayout>

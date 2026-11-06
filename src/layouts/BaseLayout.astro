@@ -1,0 +1,46 @@
+---
+import "../styles/global.css";
+
+const { title = "Portafolio de evidencias | Ingeniería Informática", description = "Portafolio académico y profesional de Ingeniería Informática." } = Astro.props;
+const nav = [
+  { label: "Inicio", href: "/" },
+  { label: "5. CV", href: "/cv" },
+  { label: "6. Proyectos", href: "/proyectos" },
+  { label: "Desarrollo personal", href: "/desarrollo" }
+];
+const currentPath = Astro.url.pathname;
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#10243a" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="/" aria-label="Ir al inicio">
+         
+          <span><strong>Portafolio</strong><small>Ingeniería Informática · 5.º semestre</small></span>
+        </a>
+        <nav aria-label="Navegación principal">
+          {nav.map((item) => (
+            <a href={item.href} class:list={{ active: currentPath === item.href }}>{item.label}</a>
+          ))}
+        </nav>
+      </div>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Portafolio de evidencias digitales · Ingeniería Informática</p>
+        <p>Proyecto académico creado con Astro</p>
+      </div>
+    </footer>
+  </body>
+</html>

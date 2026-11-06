@@ -1,0 +1,64 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const highlights = [
+  { icon: "⌘", title: "Catálogo de proyectos", text: "Una selección de prácticas de programación, sistemas embebidos, redes y bases de datos.", href: "/proyectos", link: "Explorar proyectos" },
+  { icon: "▤", title: "CV profesional", text: "Formación académica, conocimientos técnicos, habilidades y objetivos profesionales.", href: "/cv", link: "Ver currículum" }
+];
+---
+<BaseLayout title="Inicio | Portafolio de evidencias digitales">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">● Portafolio académico digital</span>
+        <h1>Erick Noe Flores Ramirez.</h1>
+    
+        <div class="hero-actions">
+          <a class="button button-primary" href="/proyectos">Ver mis proyectos ↗</a>
+          <a class="button button-light" href="/cv">Consultar CV</a>
+        </div>
+      </div>
+      <aside class="profile-card">
+        <img
+  src="/images/mi-foto.jpg"
+  alt="Fotografía de perfil"
+  class="profile-photo"
+/>
+        <h2>Estudiante de Ingeniería Informática</h2>
+        <p>5.º semestre · Portafolio de evidencias digitales</p>
+        <p>Interés en desarrollo web, programación, redes, bases de datos y tecnología con impacto cultural.</p>
+        <div class="profile-tags"><span>Astro</span><span>Python</span><span>FastAPI</span><span>ESP32</span><span>MySQL</span></div>
+      </aside>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Explora el portafolio</h2>
+        <p>El sitio reúne información profesional y proyectos técnicos que muestran mi proceso de aprendizaje.</p>
+      </div>
+      <div class="grid">
+        {highlights.map((item) => (
+          <article class="card">
+            <div class="card-icon">{item.icon}</div>
+            <h3>{item.title}</h3>
+            <p>{item.text}</p>
+            <a class="card-link" href={item.href}>{item.link} →</a>
+          </article>
+        ))}
+      </div>
+      <div class="stats">
+        <div class="stat"><strong>5+</strong><span>Proyectos y prácticas técnicas</span></div>
+        <div class="stat"><strong>3</strong><span>Ejes de formación</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Mi propósito</h2>
+        <p>Convertir los conocimientos vistos en clase en soluciones funcionales, trabajar con responsabilidad y seguir aprendiendo nuevas herramientas para resolver problemas reales.</p>
+      </div>
+      
+    </div>
+  </section>
+</BaseLayout>

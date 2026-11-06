@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const projects = [
+  { n: "01", title: "Lotería interactiva mazahua", type: "Sistemas embebidos · Python", desc: "Prototipo que relaciona tarjetas RFID con palabras en mazahua y su significado en español. Integra un ESP32, lector MFRC522 y una interfaz en Python para mostrar la información y apoyar la difusión cultural.", skills: ["ESP32", "RFID", "Python", "Tkinter"] },
+  { n: "02", title: "API de películas con FastAPI", type: "Backend · APIs", desc: "API para organizar información de películas y géneros. El siguiente paso es conectar el backend existente con una interfaz Astro para presentar los datos de manera clara.", skills: ["Python", "FastAPI", "JSON", "API REST"]},
+  { n: "03", title: "Sitio Nissan Skyline GT-R", type: "Frontend · Sitio informativo", desc: "Sitio web temático con secciones de historia, versiones, galería y acerca de. El proyecto permite practicar componentes, navegación, diseño adaptable y organización de contenido.", skills: ["Astro", "TypeScript", "Tailwind CSS"] },
+  { n: "04", title: "Prácticas de redes en Packet Tracer", type: "Redes · Conectividad", desc: "Configuración de routers y computadoras de distintas áreas, direccionamiento IP y pruebas de ping para verificar la comunicación entre redes.", skills: ["IPv4", "Routers", "Ping", "Packet Tracer"] },
+  { n: "05", title: "Diseño de bases de datos con MySQL", type: "Datos · SQL", desc: "Prácticas de creación de bases de datos, tablas y consultas SQL, utilizando herramientas de MySQL y XAMPP para gestionar información.", skills: ["MySQL", "SQL", "XAMPP", "Modelado"] },
+  { n: "06", title: "Sensor de distancia con ESP32", type: "IoT · Electrónica", desc: "Práctica de lectura de distancia y presentación de valores, con la idea de consultar los datos desde una interfaz web adaptable a dispositivos móviles.", skills: ["ESP32", "Sensor", "Serial", "Web"] }
+];
+---
+<BaseLayout title="6.Proyectos | Portafolio de evidencias">
+  <section class="page-hero"><div class="container"><span class="eyebrow">Trabajo técnico</span><h1>6.Proyectos</h1><p>Proyectos y prácticas que reflejan mi aprendizaje en programación, desarrollo web, hardware, redes y bases de datos.</p></div></section>
+  <section class="content-section"><div class="container">
+    <div class="note" style="margin-bottom:24px"> <code></code> </div>
+    <div class="grid">
+      {projects.map((project) => (
+        <article class="card project-card">
+          <span class="project-number">PROYECTO {project.n}</span>
+          <h3>{project.title}</h3>
+          <p><strong>{project.type}</strong></p>
+          <p style="margin-top:10px">{project.desc}</p>
+          <div class="profile-tags">{project.skills.map((skill) => <span>{skill}</span>)}</div>
+          
+        </article>
+      ))}
+    </div>
+  </div></section>
+</BaseLayout>
